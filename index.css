@@ -1,0 +1,157 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: "Poppins", sans-serif; 
+}
+body { 
+    display: flex; 
+    padding: 0 10px; align-items: center; 
+    justify-content: center; 
+    min-height: 100vh; 
+    background: #3e03aa; 
+}
+
+.container { 
+    width: 100%; 
+    max-width: 420px; 
+    border-radius: 10px; 
+    background: #222; 
+}
+
+.container h2 { 
+    font-size: 28px; 
+    font-weight: 600; 
+    padding: 20px 25px; 
+    border-bottom: 1px solid #333; 
+    color: #fff; 
+}
+
+.container .content { 
+    margin: 25px 20px 35px; 
+}
+
+.content .word { 
+    user-select: none; 
+    font-size: 36px; 
+    font-weight: 600; 
+    text-align: center; 
+    letter-spacing: 18px; 
+    margin-right: -18px; 
+    word-break: break-all; 
+    text-transform: uppercase; 
+    color: #5372f0; 
+}
+
+.content .details { 
+    margin: 25px 0 20px; 
+}
+
+.details p { 
+    font-size: 18px; 
+    margin-bottom: 10px; 
+    color: #bbb; 
+}
+
+.content input { 
+    width: 100%; 
+    height: 50px; 
+    outline: none; 
+    padding: 0 15px; 
+    font-size: 16px; 
+    border-radius: 8px; 
+    border: 1px solid #333; 
+    background-color: #111; 
+    color: #bbb; 
+}
+
+.content input:focus { 
+    border-color: #5372f0 ; 
+    background-color: #222; 
+    color:#fff; 
+}
+
+.content input::placeholder { 
+    color: #555; 
+}
+
+.content input:focus::placeholder { 
+    color:#bbb; 
+}
+
+.content .buttons { 
+    display: flex; 
+    margin-top: 20px; 
+    justify-content: space-between; 
+}
+
+.buttons button { 
+    border: none; 
+    outline: none; 
+    color: #fff; 
+    cursor: pointer; 
+    padding: 14px 0; 
+    font-size: 16px; 
+    border-radius: 8px; 
+    width: calc(50%- 5px); 
+}
+
+.buttons button:active { 
+    transform: scale(0.97); 
+}
+
+.buttons .refresh-word { 
+    background: #6c757d; 
+}
+
+.buttons .refresh-word:hover { 
+    background: #5f666d;
+}
+
+.buttons .check-word { 
+    background: #5372f0; 
+}
+
+.buttons .check-word:hover { 
+    background: #2c52ed; 
+}
+
+@media screen and (max-width: 768px) { 
+    .container h2 { 
+        font-size: 22px; 
+    }
+
+    .content .word { 
+        font-size: 30px; 
+    }
+
+    .details p, .content input, .buttons button { 
+        font-size: 14px; 
+    } 
+}
+
+@media screen and (max-width: 480px) { 
+    .container { 
+        width: 100%; 
+    }
+
+    .container h2 { 
+        font-size: 20px; padding: 15px 15px; 
+    }
+
+    .content .word { 
+        font-size: 24px; 
+    }
+
+    .details p, .content input, .buttons button { 
+        font-size: 12px; padding: 10px 0; 
+    }
+
+    .content input { 
+        height: 40px; 
+    }
+
+    .buttons button { 
+        padding: 12px 0; 
+    } 
+}
